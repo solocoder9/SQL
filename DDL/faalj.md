@@ -1,1 +1,0 @@
-![alt text](a-animated-coder-coding-upscaled.png)
