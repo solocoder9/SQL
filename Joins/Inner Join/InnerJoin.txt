@@ -1,3 +1,55 @@
+INNER JOIN
+- Inner join is also known as equi join.
+- It is use to access only maching records of multiple tables
+- Inner join works only of these is a relation between the tables.
+
+Syntax: - 
+  ANSI 
+
+      SELECT ....
+      from table1 join table2
+      ON <join condition>;
+
+  ORACLE
+      SELECT ....
+      from table1, table2
+      where < join condition>;
+
+
+Examples: -
+  Q> WAQTD  employee name and there respective department name
+  ANSI 
+    SQL> select ename, dname
+    2  from emp join dept
+    3  on emp.deptno = dept.deptno;
+
+  ORACLE
+    SQL> select ename, dname
+    2  from emp, dept
+    3  where emp.deptno = dept.deptno;
+
+    ENAME      DNAME
+    ---------- --------------
+    SMITH      RESEARCH
+    ALLEN      SALES
+    WARD       SALES
+    JONES      RESEARCH
+    MARTIN     SALES
+    BLAKE      SALES
+    CLARK      ACCOUNTING
+    SCOTT      RESEARCH
+    KING       ACCOUNTING
+    TURNER     SALES
+    ADAMS      RESEARCH
+    JAMES      SALES
+    FORD       RESEARCH
+    MILLER     ACCOUNTING
+
+
+***********************************************************************************
+***********************************************************************************
+
+
 Q> WAQTO employee name and his job, his depanment name, and the location in the employee
 who are working as salesman and manager
 
@@ -19,9 +71,10 @@ TURNER     SALESMAN  SALES          CHICAGO
 
 7 rows selected.
 
-==================================================================================================
-Q> WAQTD employee name and his department number working in department no 30
-and location for the emplyees who are working in department number 30
+
+====================================================================================
+Q> WAQTD employee name and his department number and location for
+the emplyees who are working in department number 30
 
 SQL> select loc, ename, emp.deptno
   2  from emp, dept
@@ -40,7 +93,8 @@ CHICAGO       JAMES              30
 
 6 rows selected.
 
-====================================================================================================
+
+=====================================================================================
 Q> WAQTD department name, total number of emplyee working in each department
 
 SQL> select dname, count(*)
@@ -55,7 +109,7 @@ RESEARCH                5
 SALES                   6
 
 
-
+======================================================================================
 Q> WAQTD maximum salary and minimum salary in each loc if maximum salaray
  is less than 4500 and minimum salary 
 
@@ -69,9 +123,8 @@ LOC             MAX(SAL)   MIN(SAL)
 ------------- ---------- ----------
 CHICAGO             2850        950
 
-===========================================================================
 
-
+=====================================================================================
 Q> Display the project table
 
 
