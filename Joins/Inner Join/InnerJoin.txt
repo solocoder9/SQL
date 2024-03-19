@@ -1,9 +1,11 @@
 INNER JOIN
+----------
 - Inner join is also known as equi join.
-- It is use to access only maching records of multiple tables
+- It is use to access only maching records of multiple tables.
 - Inner join works only of these is a relation between the tables.
 
 Syntax: - 
+
   ANSI 
 
       SELECT ....
@@ -11,6 +13,7 @@ Syntax: -
       ON <join condition>;
 
   ORACLE
+  
       SELECT ....
       from table1, table2
       where <join condition>;

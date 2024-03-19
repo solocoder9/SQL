@@ -1,0 +1,19 @@
+LEFT OUTER JOIN
+---------------
+- Left outer join is used to access matching records from
+  both the tables along with unmatched recores of left table.
+
+  Syntax: -
+
+    ANSI-
+
+        SELECT ....
+        from table1 left join table2
+        on <join condition>;
+
+    ORACLE-
+
+        SELECT ....
+        from table1, table2
+        where table1_related_column = table2_related_colume(+);
+

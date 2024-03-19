@@ -1,0 +1,6 @@
+OUTER JOIN
+----------
+- Outer join is used to access both matching and unmatching record 
+from  different tables.
+- In outer join relatioship between the tables is mandatory.
+- Outer join first displays the matching records and later unmatching records internally.
