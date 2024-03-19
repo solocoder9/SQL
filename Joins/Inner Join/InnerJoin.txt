@@ -13,7 +13,7 @@ Syntax: -
   ORACLE
       SELECT ....
       from table1, table2
-      where < join condition>;
+      where <join condition>;
 
 
 Examples: -
