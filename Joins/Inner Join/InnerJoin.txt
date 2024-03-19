@@ -1,0 +1,78 @@
+Q> WAQTO employee name and his job, his depanment name, and the location in the employee
+who are working as salesman and manager
+
+SQL> select ename, job, dname, loc
+  2  from emp, dept
+  3  where emp.deptno = dept.deptno
+  4  and 
+  5  job in ('SALESMAN','MANAGER');
+
+ENAME      JOB       DNAME          LOC
+---------- --------- -------------- -------------
+ALLEN      SALESMAN  SALES          CHICAGO
+WARD       SALESMAN  SALES          CHICAGO
+JONES      MANAGER   RESEARCH       DALLAS
+MARTIN     SALESMAN  SALES          CHICAGO
+BLAKE      MANAGER   SALES          CHICAGO
+CLARK      MANAGER   ACCOUNTING     NEW YORK
+TURNER     SALESMAN  SALES          CHICAGO
+
+7 rows selected.
+
+==================================================================================================
+Q> WAQTD employee name and his department number working in department no 30
+and location for the emplyees who are working in department number 30
+
+SQL> select loc, ename, emp.deptno
+  2  from emp, dept
+  3  where emp.deptno = dept.deptno
+  4  and
+  5  dept.deptno = 30;
+
+LOC           ENAME          DEPTNO
+------------- ---------- ----------
+CHICAGO       ALLEN              30
+CHICAGO       WARD               30
+CHICAGO       MARTIN             30
+CHICAGO       BLAKE              30
+CHICAGO       TURNER             30
+CHICAGO       JAMES              30
+
+6 rows selected.
+
+====================================================================================================
+Q> WAQTD department name, total number of emplyee working in each department
+
+SQL> select dname, count(*)
+  2  from emp, dept
+  3  where emp.deptno = dept.deptno
+  4  group by dname;
+
+DNAME            COUNT(*)
+-------------- ----------
+ACCOUNTING              3
+RESEARCH                5
+SALES                   6
+
+
+
+Q> WAQTD maximum salary and minimum salary in each loc if maximum salaray
+ is less than 4500 and minimum salary 
+
+SQL> select loc, max(sal), min(sal)
+  2  from emp,dept
+  3  where emp.deptno = dept.deptno
+  4  group by loc
+  5  having max(sal) < 4500 and min(sal) > 850;
+
+LOC             MAX(SAL)   MIN(SAL)
+------------- ---------- ----------
+CHICAGO             2850        950
+
+===========================================================================
+
+
+Q> Display the project table
+
+
+
