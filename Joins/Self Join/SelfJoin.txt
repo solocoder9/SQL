@@ -1,0 +1,47 @@
+Q1> WAQTD employee name and his manager name.
+   
+SQL> select e1.ename, e1.job, e2.ename, e2.job
+  2  from emp e1, emp e2
+  3  where e1.mgr = e2.empno;
+
+ENAME      JOB       ENAME      JOB
+---------- --------- ---------- ---------
+SMITH      CLERK     FORD       ANALYST
+ALLEN      SALESMAN  BLAKE      MANAGER
+WARD       SALESMAN  BLAKE      MANAGER
+JONES      MANAGER   KING       PRESIDENT
+MARTIN     SALESMAN  BLAKE      MANAGER
+BLAKE      MANAGER   KING       PRESIDENT
+CLARK      MANAGER   KING       PRESIDENT
+SCOTT      ANALYST   JONES      MANAGER
+TURNER     SALESMAN  BLAKE      MANAGER
+ADAMS      CLERK     SCOTT      ANALYST
+JAMES      CLERK     BLAKE      MANAGER
+FORD       ANALYST   JONES      MANAGER
+MILLER     CLERK     CLARK      MANAGER
+
+=======================================================================
+
+
+Q4> WAQTD employee name, salary, depeartment along with manager salary
+and manager's deptpartment number.
+
+SQL> select e1.ename, e1.sal, e1.deptno, e2.ename, e2.deptno
+  2  from emp e1, emp e2
+  3  where e1.mgr = e2.empno;
+
+ENAME             SAL     DEPTNO ENAME          DEPTNO
+---------- ---------- ---------- ---------- ----------
+SMITH             800         20 FORD               20
+ALLEN            1600         30 BLAKE              30
+WARD             1250         30 BLAKE              30
+JONES            2975         20 KING               10
+MARTIN           1250         30 BLAKE              30
+BLAKE            2850         30 KING               10
+CLARK            2450         10 KING               10
+SCOTT            3000         20 JONES              20
+TURNER           1500         30 BLAKE              30
+ADAMS            1100         20 SCOTT              20
+JAMES             950         30 BLAKE              30
+FORD             3000         20 JONES              20
+MILLER           1300         10 CLARK              10
