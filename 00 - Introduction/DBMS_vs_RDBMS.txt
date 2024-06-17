@@ -1,0 +1,41 @@
+DBMS (Database Management System) vs RDBMS (Relational Database Management System)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+------------------------------------------------------------------------------------------------------------
+|    Category        |                       DBMS                         |             RDBMS              |
+------------------------------------------------------------------------------------------------------------
+| Definition         | Software that manages databases and provides       | A type of DBMS that organizes  |
+|                    | a way to store, manage, and retrieve data.         | data into structured tables    |
+|                    |                                                    | with defined relationships.    |
+------------------------------------------------------------------------------------------------------------
+| Data Storage       | Data can be stored in files, key-value pairs,      | Data is stored in tables       |
+|                    | documents, or tables.                              | consisting of rows and columns.|
+------------------------------------------------------------------------------------------------------------
+| Data Relationships | Does not inherently enforce relationships between  | Enforces relationships using   |
+|                    | data entities.                                     | primary and foreign keys.      |
+------------------------------------------------------------------------------------------------------------
+| Data Integrity     | Ensures basic data integrity but may have fewer    | Ensures strict data integrity  |
+|                    | constraints.                                       | and supports ACID properties.  |
+------------------------------------------------------------------------------------------------------------
+| Examples           | Examples include non-relational databases and      | Examples include relational    |
+|                    | some early database systems:                       | databases:                     |
+|                    | - Berkeley DB                                      | - MySQL                        |
+|                    | - MongoDB                                          | - Oracle Database              |
+|                    | - Neo4j                                            | - Microsoft SQL Server         |
+|                    | - Amazon DynamoDB                                  | - PostgreSQL                   |
+|                    |                                                    | - SQLite                       |
+------------------------------------------------------------------------------------------------------------
+| Query Language     | May use various query languages or no structured   | Primarily uses SQL (Structured |
+|                    | query language at all.                             | Query Language) for querying   |
+|                    |                                                    | and data manipulation.         |
+------------------------------------------------------------------------------------------------------------
+| Scalability        | Typically scalable for simpler, smaller            | Generally scalable and         |
+|                    | applications and datasets.                         | optimized for large, complex   |
+|                    |                                                    | datasets and high transaction  |
+|                    |                                                    | volumes.                       |
+------------------------------------------------------------------------------------------------------------
+| Usage              | Suitable for applications that require simple,     | Ideal for applications needing |
+|                    | non-relational data storage and retrieval.         | structured data with complex   |
+|                    |                                                    | relationships and strong       |
+|                    |                                                    | integrity.                     |
+------------------------------------------------------------------------------------------------------------
