@@ -1,0 +1,167 @@
+■ Data
+----
+- Data refers to way, unprocessed facts, figures, and symbols that represent the characteristics 
+  or properties of an object, event or phenomenon.
+- Examples – Student A: age – 15, grade – 9, CGPA – 9.5
+
+
+■ Information
+-----------
+- Information is collection of processed and organized data that has been transformed into a 
+  meaningful and useful form for a specific purpose.
+- Examples – Contact information of student’s parents, average age of CSE student
+
+■ Database
+----------
+- A database is an organized collection of data stored electronically, so that it can be easily 
+  accessed and managed.
+- It can contain any type of data including words, numbers, images, videos, and files.
+
+==========================================================================================================
+
+■ DBMS
+------  
+- Database management system is a software application that provides an organized and efficient way 
+  to store, manage, and retrieve data in a database.
+- It serves as an interface between the database and the users. 
+- By using DBMS, we can perform CRUD (Crate, Read, Update, Delete) operations in a database.
+- Overall, DBMS plays a crucial role in managing data efficiently, ensuring its integrity and security, 
+  and providing a convenient interface for users and applications to interact with the sored information.
+- Examples:
+    ○ RDBMS Examples: MySQL, Oracle Database, Microsoft SQL Server, SQLite, MariaDB
+    ○ NoSQL DBMS Examples: MongoDB, Cassandra, CouchDB, Redis, Amazon DynamoDB
+
+● Data Model Types in DBMS
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+    1> Ralational Data Model
+    2> Entity Relationship Data Model
+    3> Semi Structured Data Model
+    4> Hierarchical Data Model
+    5> Network Data Model
+    6> Object Oriented Data Model
+
+    1> Relational Data Model
+    ~~~~~~~~~~~~~~~~~~~~~~~~
+    - Relational model is an approach to organize and representing data in a structured way, using tables 
+      with rows and columns.
+    - Relational model was introduced by Edgar Frank Codd (E. F. Codd) in the year 1970.
+    - He established the main rule that the data has to be stored in tabular form.
+
+==========================================================================================================
+
+■ RDBMS
+-------
+- RDBMS stands for Relational Database Management System.
+- It is a type of Database Management System (DBMS), the follows the principles of the relation model, 
+  which was introduced by Edgar Codd. 
+- In an RDBMS, data is organized into tables with rows and columns, and Relationships between tables are 
+  established using keys.
+- Examples: - MySQL, Oracle Database, Microsoft SQL Server, SQLite, MariaDB.
+
+● Key Features of RDBMS
+~~~~~~~~~~~~~~~~~~~~~~~
+    1> Tables
+    ~~~~~~~~~
+    - Data is stored in tables, where each table consists or rows (records or tuples) and columns 
+      (attributes or fields).
+
+    2> Relationships
+    ~~~~~~~~~~~~~~~~
+    - RDBMS allows the establishment of relationships between tables using keys, such as primary keys and 
+      foreign keys.
+
+    3> ACID Properties
+    ~~~~~~~~~~~~~~~~~~
+    - RDBMS follows to the ACID properties (Atomicity, Consistency, Isolation, Durability), ensuring the 
+      reliability and consistency of transactions.
+
+    4> SQL
+    ~~~~~~
+    - SQL is used to interact with RDBMS, providing a standardized language for defining, querying, and 
+      manipulating data.
+
+    5> Data Integrity
+    ~~~~~~~~~~~~~~~~~
+    - RDBMS enforces data integrity through constraints like primary keys, foreign keys, and unique 
+      constraints.
+
+● Table
+~~~~~~~
+- A table is a fundamental structure used to organize and store data.
+- It is a two-dimensional representation of data where information is organized in rows and columns.
+
+    ○ Rows (records or tuples)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    - Each row in a table represents a record or specific set of related data.
+    - It contains data values corresponding to different attributes or columns.
+
+    ○ Columns (attributes or fields)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    - Each column in a table represents a specific attribute or field. 
+    - It defines the type of information stored in that particular aspect of the data.
+
+    ○ Cells
+    ~~~~~~~
+    - The intersection of a cow and column is called a cell.
+    - Each cell contains a single data value.
+
+● SQL
+~~~~~
+- SQL stands for Structure Queary Language.
+- It is a standard programming language designed for managing and manipulating relational databases.
+- Basically, it is used to do CRUD operation in a Relational Databased Management System (RDBMS).
+- CRUD:-
+    o Create (Insert)
+    o Read (Select)
+    o Update (Modify)
+    o Delete (Drop)
+- SQL was initially developed at IBM by Donald D. Chamberlin and Raymond F. Boyce in the early 1970s 
+  after learning about the relational model from Edgar F. Codd.
+- It was initially known as the Structured English Query Language (SEQUEL). The term was later shortened 
+  to SQL.
+
+==========================================================================================================
+
+● Keyword
+---------
+- Keywords are reserved words that have special meaning and are used to perform specific operations of 
+ functions. 
+
+    o CONNECT (Keyword)
+    ~~~~~~~~~
+    - CONNECT keyword in SQL is used int the context of managing user privileges.
+    - It is used to grant the privilege to connect to a database to a specific user or role.
+    - Syntax: - 
+        CONNECT
+        Enter username: 
+        Enter password: 
+
+        CONNECT username
+        Enter password: 
+
+    o SHOW USER
+    ~~~~~~~~~~~
+    - It is used to display the current user we are logged in as.
+    - Syntax: -
+        SHOW USER
+
+    o SELECT * FROM TAB
+    ~~~~~~~~~~~~~~~~~~~
+    - This command is used to list all tables, views, and synonyms accessible to the current user 
+      in a database.
+    
+    o DESC (Keyword)
+    ~~~~~~~~~~~~~~~~
+    - This keyword is used to describe the structure of a table.
+    - Syntax: -
+        DESC tableName
+
+
+
+
+    
+
+
+
+
+
