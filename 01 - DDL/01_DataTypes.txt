@@ -1,0 +1,13 @@
+Data Types in SQL
+-----------------
+- In SQL, data types define the kind of data that can be stored in a column of a table.
+- They ensure data integrity by specifying what type of data each column can hold, such
+  as integers, characters, dates, etc.
+
+Common SQL Data Types
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    1> CHAR
+    2> VARCHAR
+    3> NUMBER
+    4> DATE
+    5> LOB
