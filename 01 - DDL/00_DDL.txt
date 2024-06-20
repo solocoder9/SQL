@@ -1,1 +1,55 @@
-flajaja
+DDL (Data Definition Language)
+------------------------------
+- DDL stands for Data Definition Language.
+- It incluede SQL commands used to define, modify, and manage the structure of database
+  objects such as tables, indexes, and schemas.
+- There are 6 types of DDL commands
+    1> CREATE 
+    2> ALTER
+    3> DROP
+    4> TRUNCATE
+    5> RENAME
+    6> COMMENT
+
+1> CREATE
+~~~~~~~~~
+- This command is used to create database objects like tables, views, indexes, and schemas.
+- Example:
+    CREATE TABLE Employees (
+        EmployeeID INT PRIMARY KEY,
+        FirstName VARCHAR(50),
+        LastName VARCHAR(50),
+        DateOfBirth DATE
+    );
+ 
+2> ALTER
+~~~~~~~~
+- This command is used to modifiy the structure of existing database object.
+- Example:
+    ALTER TABLE Employees ADD Email VARCHAR(100);
+
+3> DROP
+~~~~~~~
+- This command is used to delete existing database objects such as tables, views, indexes, columns,
+  schemas or database.
+- Example:
+    DROP TABLE Employees;
+
+4> TRUNCATE
+~~~~~~~~~~~
+- This command is used to removes all records from a table, but unlike 'DROP', the table structure 
+  remains intact for future use.
+- Example:
+    TRUNCATE TABLE Employees;
+
+5> RENAME
+~~~~~~~~~
+- This command is used to rename an existing database object.
+- Example:
+    ALTER TABLE Employees RENAME TO Staff;
+
+6> COMMENT
+~~~~~~~~~~
+- This command is used to add descriptive comments to database objects.
+- Example:
+    COMMENT ON TABLE Employees IS 'This table stores employee data';
