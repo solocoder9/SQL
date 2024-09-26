@@ -102,7 +102,7 @@
 
     ○ Cells
     ~~~~~~~
-    - The intersection of a cow and column is called a cell.
+    - The intersection of a row and column is called a cell.
     - Each cell contains a single data value.
 
 ● SQL
