@@ -109,7 +109,7 @@
 ~~~~~
 - SQL stands for Structure Queary Language.
 - It is a standard programming language designed for managing and manipulating relational databases.
-- Basically, it is used to do CRUD operation in a Relational Databased Management System (RDBMS).
+- Basically, it is used to do CRUD operation in a Relational Database Management System (RDBMS).
 - CRUD:-
     o Create (Insert)
     o Read (Select)
